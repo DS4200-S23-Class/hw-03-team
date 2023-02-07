@@ -14,12 +14,9 @@ const fontText = " is a nice font, but...";
 // Function used to change the font on click
 function changeFont() {
 
-    if (counter >= fontsList.length) {
-        counter = 1
-    };
-    
-    // Add to counter
-    counter++;
+    if (counter > fontsList.length - 1) {
+        counter = 0;
+    }
 
     // Change the font of the website in order of the list
     document.body.style.fontFamily = fontsList[counter];
@@ -29,4 +26,7 @@ function changeFont() {
 
     // Return the final statement and updates html
     document.getElementById("button-text").innerHTML = finalStatement;
+
+    // Add to counter
+    counter++;
 };
