@@ -1,0 +1,9 @@
+/* Set font of website */
+body {
+    font-family: Arial;
+}
+
+/* Set headers such that they are centered */
+h1, h2 {
+    text-align: center;
+}
