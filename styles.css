@@ -7,3 +7,17 @@ body {
 h1, h2 {
     text-align: center;
 }
+
+
+.flex-container {
+    display: flex;
+    justify-content: left;
+}
+
+.vis {
+    display: block;
+}
+
+.p1 {
+    margin-bottom: 120px;
+}
