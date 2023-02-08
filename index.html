@@ -15,24 +15,25 @@
     <!-- Add header for the page -->
     <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
 
-
     <!-- Create table w/ visualizations -->
     <div class="flex-container">
-        <!-- Column 1: visualizations -->
-        <div>
-            <img class="vis" src="img/vis1.png" alt="visualization1" width="400px">
-            <img class="vis" src="img/vis2.png" alt="visualization2" width="400px">
-        </div>
 
-        <!-- Column 2: visualization info -->
-        <div>
-            <div class="p1">
+        <!-- Row 1: visualization 1 -->
+        <div class="row">
+
+            <div>
+                <img src="img/vis1.png" alt="visualization1" width="400px">
+            </div>
+
+            <div>
+
                 <h2>Marks</h2>
                     <ul>
                         <li>mark 1: area (map of U.S.)</li>
                         <li>mark 2: line (vote count)</li>
                         <li>mark 3: points (Maine and Nebraska legends)</li>
                     </ul>
+
                 <h2>Channels</h2>
                     <ul>
                         <li>channel 1: color</li>
@@ -42,6 +43,7 @@
                                     by clearly showing the vote outcome</li>
                             </ul>
                     </ul>
+
                 <h2>Colormap</h2>
                     <ul>
                         <li>colormap categorical (red/blue)</li>
@@ -51,13 +53,24 @@
                             </ul>
                     </ul>
             </div>
-            <p>
+        </div>
+
+        <!-- Row 2: visualization 2 -->
+        <div class="row">
+
+            <div>
+                <img src="img/vis2.png" alt="visualization2" width="400px">
+            </div>
+
+            <div>
+
                 <h2>Marks</h2>
                     <ul>
                         <li>mark 1: points (points on graph)</li>
                         <li>mark 2: lines (benchmark lines)</li>
                         <li>mark 3: line (scoring value legend)</li>
                     </ul>
+
                 <h2>Channels</h2>
                     <ul>
                         <li>chanel 1: color</li>
@@ -74,6 +87,7 @@
                                     by clearly showing the launch angle and exit velocity</li>
                             </ul>
                     </ul>
+
                 <h2>Colormap</h2>
                     <ul>
                         <li>colormap divergent</li>
@@ -82,14 +96,66 @@
                                 <li>this is a good mapping because it is for a magnitude channel</li>
                             </ul>
                     </ul>
-            </p>
+            </div>
+        </div>
+
+        <!-- Row 3: visualization 3 -->
+        <div class="row">
+
+            <div>
+                <img src="vis_create/vis3.png" alt="visualization3" width="400px">
+            </div>
+
+            <div>
+
+                <h2>Marks</h2>
+                    <ul>
+                        <li>mark 1: points (points on graph)</li>
+                    </ul>
+
+                <h2>Channels</h2>
+                    <ul>
+                        <li>chanel 1: color</li>
+                            <ul>
+                                <li>represents sequential attribute (ranking from 1-500)</li>
+                                <li>this seems to be a good mapping since gives a good sense of
+                                    how school rankings (and therefore funding, etc) may result in 
+                                    the differences in median salary & financial aid.
+                                </li>
+                            </ul>
+                        <li>channel 2: position (horizontal and vertical)</li>
+                            <ul>
+                                <li>the position focuses on a potential correlation between
+                                    median salary and financial aid -- there are two channels in this
+                                    case, each of which represent one of the above two attributes
+                                </li>
+                            </ul>
+                    </ul>
+
+                <h2>Colormap</h2>
+                    <ul>
+                        <li>colormap sequential</li>
+                            <ul>
+                                <li>represents sequential attribute (school rankings)</li>
+                                <li>as mentioned before, this is a good mapping because the goal
+                                    of the visualization is not to split schools into "good" or "bad,"
+                                    and the schools aren't being put into any categories. The focus is 
+                                    on the ranking, so a sequential colormap is best.
+                                </li>
+                            </ul>
+                    </ul>
+            </div>
+
         </div>
     </div>
 
-    <div>
+    <!-- Extra Credit: JS Button -->
+    <div id="font-button">
+
+        <h2>Extra Credit: JS Button</h2>
 
         <!-- Text box to provide info on functionality of button -->
-        <div id="button-text" class="gen">
+        <div id="button-text">
             Arial is a nice font, but...
         </div>
 
@@ -100,10 +166,12 @@
 
 
     <!-- List acknowledgements -->
-    <h2>Acknowledgements</h2>
+    <h3>Acknowledgements</h3>
     <div>
         <ul>
-            <li><a href="https://www.kaggle.com/datasets/thedevastator/bot-activity-and-credibility-scores-on-social-me?resource=download">Kaggle: dataset source</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks">CSS-Tricks: Flexbox</a></li>
+            <li><a href="https://stackoverflow.com/questions/55738082/how-to-make-a-flexible-2x3-grid-using-flexbox">StackOverflow: Flexbox Help</a></li>
+            <li><a href="https://www.kaggle.com/datasets/kabhishm/top-american-colleges-2022">Kaggle: dataset source</a></li>
             <li><a href="https://www.w3schools.com/jsref/event_onclick.asp">w3schools onclick Event</a></li>
             <li><a href="https://www.w3schools.com/js/js_arrays.asp">w3schools JavaScript Arrays</a></li>
             <li><a href="https://www.w3schools.com/js/js_if_else.asp">w3schools JavaScript Conditionals</a></li>
@@ -111,6 +179,7 @@
         </ul>
     </div>
 
+    <!-- Import JS file -->
     <script src="main.js"></script>
 
 </body>

@@ -4,7 +4,7 @@ body {
 }
 
 /* Set headers such that they are centered */
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -12,12 +12,14 @@ h1, h2 {
 .flex-container {
     display: flex;
     justify-content: left;
+    flex-direction: column;
 }
 
-.vis {
-    display: block;
+.row {
+    display: flex;
 }
 
-.p1 {
-    margin-bottom: 120px;
+#font-button {
+    margin-top: 25px;
+    text-align: center;
 }
