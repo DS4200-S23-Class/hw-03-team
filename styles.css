@@ -19,6 +19,15 @@ h1, h2, h3 {
     display: flex;
 }
 
+.vis {
+    flex: 0.5;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+}
+
 #font-button {
     margin-top: 25px;
     text-align: center;
